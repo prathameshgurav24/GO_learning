@@ -12,6 +12,7 @@ const fileName = "balance.txt"
 func main() {
 
 	fmt.Print(randomdata.PhoneNumber())
+
 	currentBalance, err := fileops.GetFloatFromFile(fileName)
 	if err != nil {
 		fmt.Println("ERROR")
