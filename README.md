@@ -82,23 +82,23 @@ Packages - A Closer Look
 	Splitting Code Across Multiple Files
 	Splitting Files Across Multiple Packages
 	Importing & Using Custom Packages
-![alt text](image.png)
+![alt text](images/image.png)
  
 go get github.com/Pallinder/go-randomdata  //command for importing third party packages
- ![alt text](image-1.png)
+ ![alt text](images/image-1.png)
 
 Understanding Pointers
 	Working With Addresses Instead of Values
 	What are Pointers?
 	Why does this feature exist?
- ![alt text](image-2.png)
- ![alt text](image-3.png)
+ ![alt text](images/image-2.png)
+ ![alt text](images/image-3.png)
 
 A Pointer's Null Value
 All values in Go have a so-called "Null Value" - i.e., the value that's set as a default if no value is assigned to a variable.
 For example, the null value of an int variable is 0. Of a float64, it would be 0.0. Of a string, it's "".
 For a pointer, it's nil - a special value built-into Go.
-nil represents the absence of an address value - i.e., a pointer pointing at no address / no value in memory.![alt text](image-4.png)
+nil represents the absence of an address value - i.e., a pointer pointing at no address / no value in memory.![alt text](images/image-4.png)
  
 Structs
 	Grouping Data & Functions Into Collections
@@ -165,9 +165,9 @@ func getUserData(promptText string) string {
 }
 
 Struct Method
-![alt text](image-5.png)
+![alt text](images/image-5.png)
  
-Correct way of writing mutable struct functions without creating copy and using pointers:![alt text](image-6.png)
+Correct way of writing mutable struct functions without creating copy and using pointers:![alt text](images/image-6.png)
  
 Go Isn’t Object Oriented
 It’s worth pointing out that, Go itself is not an object-oriented language the same way that the likes of Java is. Constructors aren’t something that are built in to the language and what I demonstrate below show the equivalents to constructors in Go, but they are more akin to factory functions.
@@ -262,13 +262,13 @@ func main() {
 }
 
 
-Structs, Packages & Exports :  ![alt text](image-7.png)
-Exposing Methods & A Different Constructor Function Name: ![alt text](image-8.png)
+Structs, Packages & Exports :  ![alt text](images/image-7.png)
+Exposing Methods & A Different Constructor Function Name: ![alt text](images/image-8.png)
 
-Struct Embedding: inheritance![alt text](image-9.png)
-  ![alt text](image-10.png)
+Struct Embedding: inheritance![alt text](images/image-9.png)
+  ![alt text](images/image-10.png)
 
 
 Creating Other Custom Types & Adding Methods :
-![alt text](image-11.png)
-![alt text](image-12.png)
+![alt text](images/image-11.png)
+![alt text](images/image-12.png)
